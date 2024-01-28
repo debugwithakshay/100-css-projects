@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Figtree", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(245, 209, 79);
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  
+}
+
+.card {
+  width: 30rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid;
+  box-shadow: 0.5rem 0.5rem 0rem rgb(0, 0, 0);
+  padding: 1.5rem;
+}
+
+.card .blog__thumbnail {
+  width: 100%;
+  border-radius: 1rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.card .blog__tag {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: rgb(18, 18, 18);
+  background-color: rgb(245, 209, 79);
+  padding: 0.5rem;
+}
+
+.card .published__date {
+  font-weight: 600;
+  display: block;
+  margin: 1.5rem 0rem;
+}
+
+.card .blog__heading {
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.card .blog__description {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: rgb(128, 128, 128);
+  line-height: 1.8rem;
+}
+
+.card .about__author {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card .about__author .author--img {
+  width: 3rem;
+}
+
+.card .about__author .author--name {
+  font-weight: 800;
+}
