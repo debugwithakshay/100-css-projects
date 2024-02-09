@@ -1,0 +1,11 @@
+body {
+  background-color: pink;
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-origin: content-box;
+  background-attachment: scroll;
+  background-blend-mode: darken;
+  background-clip: border-box;
+}
