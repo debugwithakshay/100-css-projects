@@ -3,8 +3,6 @@ button {
   margin: 20px;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(108, 108, 232);
-  color: antiquewhite;
   font-weight: 600;
 }
 
@@ -12,4 +10,13 @@ button {
   border-radius: 5px;
   border: 2px solid rgb(236, 91, 91);
   outline: 2px solid rgb(213, 108, 232);
+  background-color: transparent;
+}
+
+.button--solid {
+  border-radius: 5px;
+  border: 2px solid rgb(236, 91, 91);
+  outline: 2px solid rgb(213, 108, 232);
+  background-color: rgb(101, 101, 234);
+  color: #fff;
 }
