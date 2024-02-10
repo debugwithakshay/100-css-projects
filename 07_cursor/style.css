@@ -1,0 +1,39 @@
+#pointer {
+  cursor: pointer;
+}
+
+#default {
+  cursor: default;
+}
+
+#disabled {
+  cursor: not-allowed;
+}
+
+#progress {
+  cursor: progress;
+}
+
+#grab {
+  cursor: grab;
+}
+
+#grabbing {
+  cursor: grabbing;
+}
+
+#text {
+  cursor: text;
+}
+
+#wResize {
+  cursor: w-resize;
+}
+
+#hResize {
+  cursor: s-resize;
+}
+
+#custom {
+  cursor: url(cursor.png), auto;
+}
