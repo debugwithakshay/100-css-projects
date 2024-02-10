@@ -1,0 +1,6 @@
+li{
+    list-style-type: square;
+    list-style-position: outside;
+    /* list-style-image: url(https://static.thenounproject.com/png/5265761-200.png); */
+    /* list-style: square outside; */
+}
