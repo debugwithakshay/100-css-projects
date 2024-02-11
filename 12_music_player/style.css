@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.card {
+  width: 30rem;
+  height: 45rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1),
+    -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 3rem 0rem 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.disk {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-image: url(artist_img.jpeg);
+  background-size: cover;
+  background-position: center;
+  align-self: center;
+  position: relative;
+  animation: rotateDisk 3s infinite linear;
+}
+
+.disk::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255, 255, 255, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.song-desc {
+  margin-top: 2rem;
+}
+
+.song {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #202020;
+}
+
+.artist {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #202020;
+  margin-top: -0.3rem;
+}
+
+.control-box {
+  margin-top: 3rem;
+  align-self: center;
+}
+
+.like--icon {
+  display: inline-block;
+  margin: 0rem 5rem;
+  color: #ff6a88;
+}
+
+.speaker--icon,
+.repeat--icon {
+  color: #202020;
+}
+
+.duration-box {
+  margin-top: 2rem;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.duration-box span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.progress-total {
+  width: 18rem;
+  height: 0.5rem;
+  background-color: #d3d3d3;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.progress-total::after {
+  content: "";
+  width: 30%;
+  height: 100%;
+  background-color: #ff6a88;
+  position: absolute;
+  border-radius: 0.5rem;
+}
+
+.pause--icon {
+  margin-top: 2rem;
+  align-self: center;
+  font-size: 3rem;
+  color: #202020;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(255, 106, 136, 0.3),
+    -0.5rem -0.5rem 1rem rgba(255, 106, 136, 0.3);
+}
+
+@keyframes rotateDisk {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
