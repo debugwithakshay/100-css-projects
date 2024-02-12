@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(197, 197, 197);
+}
+
+.ground {
+  width: 40rem;
+  height: 5rem;
+  position: absolute;
+  background-color: rgb(164, 49, 49);
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+}
+
+.ground::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1rem;
+  top: 0;
+  background-color: green;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.windmill {
+  position: absolute;
+  width: 1rem;
+  height: 35rem;
+  bottom: 5rem;
+  background-color: rgb(33, 33, 33);
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.blade {
+  position: absolute;
+  width: 20rem;
+  height: 0.6rem;
+  background-color: rgb(33, 33, 33);
+}
+
+.blade--one {
+  left: 50%;
+  transform: translateX(-50%);
+  animation: rotating-1 infinite linear 3s;
+}
+
+.blade--two {
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  animation: rotating-2 infinite linear 3s;
+}
+
+
+@keyframes rotating-1 {
+    0%{
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    100%{
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes rotating-2 {
+    0%{
+        transform: translateX(-50%) rotate(90deg);
+    }
+
+    100%{
+        transform: translateX(-50%) rotate(450deg);
+    }
+}
