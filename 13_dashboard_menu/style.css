@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.navigation {
+  height: 95vh;
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-box {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+  align-self: center;
+}
+
+.logo--img {
+  color: rgb(118, 118, 255);
+  font-size: 3rem;
+}
+
+.logo--name {
+  font-size: 2.3rem;
+  
+  font-family: "Poppins", sans-serif;
+}
