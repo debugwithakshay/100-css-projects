@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.ball {
+  width: 4rem;
+  height: 4rem;
+  background-color: black;
+  position: absolute;
+  bottom: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: bouncing infinite linear 3s ;
+}
+
+
+@keyframes bouncing {
+    0%{
+        transform: translateY(-15rem);
+    }
+
+    50%{
+        transform: translateY(15rem);
+    }
+
+    100%{
+        transform: translateY(-15rem);
+    }
+}
