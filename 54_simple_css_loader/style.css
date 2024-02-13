@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: blueviolet;
+}
+
+.loader {
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1rem solid rgba(255, 255, 255, 0.3);
+  border-top: 1rem solid #fff;
+  animation: load 1s infinite linear;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
