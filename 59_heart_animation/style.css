@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+.heart{
+    width: 24px; /* pathのサイズ */
+	height: 24px; /* pathのサイズ */
+	background: #FF5252; /* 色 */
+	clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+	transform: scale(5);
+    animation: heart infinite linear 0.5s;
+}
+
+@keyframes heart {
+    0%,
+    100%{
+        transform: scale(5);
+    }
+
+    50%{
+        transform: scale(5.5);
+    }
+}
