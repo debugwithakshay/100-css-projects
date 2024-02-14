@@ -11,96 +11,73 @@ html {
 }
 
 body {
-  position: relative;
-  height: 100vh;
-  width: 100%;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
 
-.deck {
-  position: absolute;
-  left: 40%;
-  top: 30%;
-  transform: translateX(-50%);
+.container {
+  width: 30rem;
+  height: 45rem;
+  perspective: 900px;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg) rotateZ(180deg);
 }
 
 .card {
-  position: absolute;
-  width: 25rem;
-  height: 35rem;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.card--front,
+.card--back {
+  height: 100%;
+  width: 100%;
   border-radius: 1rem;
-  cursor: pointer;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(255, 255, 255, 0.3),
+    -0.5rem -0.5rem 2rem rgba(255, 255, 255, 0.3);
+  position: absolute;
+  backface-visibility: hidden;
 }
 
-.card--1 {
-  transition: all 1s ease-in;
-  background: #11998e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #38ef7d,
-    #11998e
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #38ef7d,
-    #11998e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  transform: rotate(0deg);
-  transform-origin: bottom right;
+.card--front {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card--1:hover {
-  animation: selected 1 linear 0.5s both;
+.card--back {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg) rotateZ(180deg);
 }
 
-.card--2 {
-  background: #333333; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #dd1818,
-    #333333
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #dd1818,
-    #333333
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  transform: rotate(-5deg);
-  transform-origin: bottom right;
+.card--back > h1 {
+  font-size: 2rem;
+  color: #181818;
+  text-align: center;
+  margin-top: 5rem;
 }
 
-.card--3 {
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
-
-  transform: rotate(-10deg);
-  transform-origin: bottom right;
-}
-
-.card--4 {
-  background: #bc4e9c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f80759,
-    #bc4e9c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f80759,
-    #bc4e9c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  transform: rotate(-15deg);
-  transform-origin: bottom right;
-}
-
-@keyframes selected {
-  0% {
-    transform: rotate(0deg) translateY(0rem);
-  }
-
-  100% {
-    transform: rotate(0deg) translateY(-5rem);
-  }
+#img--dino {
+  width: 25rem;
 }
