@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+.stage {
+  display: flex;
+  gap: 2rem;
+}
+
+.dot {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #000;
+  animation: bounce infinite 0.8s linear;
+}
+
+.dot--1 {
+    animation-delay: 0s;
+}
+
+.dot--2 {
+    animation-delay: 0.5s;
+}
+
+.dot--3 {
+    animation-delay: 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}
