@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.deck {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+
+.card {
+  position: absolute;
+  width: 25rem;
+  height: 35rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.card--1 {
+  transition: all 1s ease-in;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transform: rotate(0deg);
+  transform-origin: bottom right;
+}
+
+.card--1:hover {
+  animation: selected 1 linear 0.5s both;
+}
+
+.card--2 {
+  background: #333333; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd1818,
+    #333333
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd1818,
+    #333333
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transform: rotate(-5deg);
+  transform-origin: bottom right;
+}
+
+.card--3 {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+
+  transform: rotate(-10deg);
+  transform-origin: bottom right;
+}
+
+.card--4 {
+  background: #bc4e9c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f80759,
+    #bc4e9c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f80759,
+    #bc4e9c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transform: rotate(-15deg);
+  transform-origin: bottom right;
+}
+
+@keyframes selected {
+  0% {
+    transform: rotate(0deg) translateY(0rem);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(-5rem);
+  }
+}

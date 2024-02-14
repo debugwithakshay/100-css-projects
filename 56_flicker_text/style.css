@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: -7rem;
+}
+
+.damage{
+  animation: flicker 0.1s infinite linear;
+}
+
+.shadow {
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
+  transform: rotate(180deg);
+  direction: ltr;
+}
+
+.damage-shadow{
+  animation: flicker-shadow 0.1s infinite linear;
+}
+
+@keyframes flicker {
+  0%{
+    color: rgba(255, 255, 255, 1);
+  }
+
+  50%{
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  100%{
+    color: rgba(255, 255, 255, 1);
+  }
+} 
+
+@keyframes flicker-shadow {
+  0%{
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  50%{
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  100%{
+    color: rgba(255, 255, 255, 0.3);
+  }
+} 
