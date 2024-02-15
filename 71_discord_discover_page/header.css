@@ -5,6 +5,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .header .header-image--left {
@@ -82,14 +83,6 @@
 
 .burger-menu{
   display: none;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.burger-menu div{
-  width: 3rem;
-  height: 0.55rem;
-  background-color: #fff;
 }
 
 /* heading */

@@ -1,0 +1,245 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  width: 75%;
+  height: 50rem;
+  margin-top: 6rem;
+}
+
+/* search section */
+
+.search-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#search {
+  font-family: "medium";
+  color: rgb(148, 148, 148);
+  font-size: 1.6rem;
+  width: 93.5%;
+  height: 55px;
+  border-top: 1rem solid rgb(235, 235, 235);
+  border-bottom: 1rem solid rgb(235, 235, 235);
+  border-right: 1rem solid rgb(235, 235, 235);
+  border-left: 0.1rem solid rgb(235, 235, 235);
+  background-color: rgb(217, 217, 217);
+  padding-left: 1rem;
+  border-radius: 0.8rem;
+}
+
+#search:focus {
+  outline: 2px solid #6249e9;
+}
+
+.search--icon {
+  width: 2.5;
+  background-color: #6249e9;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+/* result section */
+.result-section {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* filter section */
+
+.filter {
+  width: 25%;
+}
+
+.filter .filter--item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.filter .filter--item:last-child {
+  margin-bottom: 0rem;
+}
+
+.filter .filter--selected {
+  background-color: rgb(213, 213, 213);
+  font-family: "bold";
+}
+
+.total-communities--selected {
+  font-family: "medium";
+  font-size: 1.5rem;
+}
+
+.total-communities--non-selected {
+  font-family: "regular";
+  font-size: 1.5rem;
+}
+
+.filter .filter--non-selected {
+  transition: all 0.3s;
+}
+
+.filter .filter--non-selected div p {
+  font-family: "regular";
+  color: #363636;
+}
+
+.filter .filter--non-selected:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.filter .filter--item div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "medium";
+  font-size: 1.3rem;
+  color: rgb(21, 21, 21);
+}
+
+/* result section */
+
+.result {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+}
+
+.result .result--heading {
+  font-family: "medium";
+  font-size: 2rem;
+  color: #363636;
+  margin-bottom: 1.5rem;
+}
+
+.result--section {
+  width: 99%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.result--item {
+  display: flex;
+  gap: 2rem;
+}
+
+.result--thumbnail {
+  width: 35%;
+  height: 15rem;
+  border-radius: 1rem;
+  background-size: cover;
+}
+
+.result--about {
+  width: 60%;
+  position: relative;
+}
+
+.result--item .result--about div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.result--about .server-image {
+  width: 3rem;
+  border-radius: 1rem;
+}
+
+.result--about .server-name {
+  font-size: 1.5rem;
+  font-family: "medium";
+  color: #2a2a2a;
+}
+
+.result--about .server-description {
+  font-size: 1.3rem;
+  font-family: "regular-bold";
+  color: #2a2a2a;
+  margin-top: 1rem;
+}
+
+.result--about .users {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.result--about .users span {
+  font-family: "regular";
+  font-size: 1.2rem;
+  color: #363636;
+}
+
+.result--about .users .seprator {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #363636;
+}
+
+.verified-box {
+  display: inline-flex;
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(213, 213, 213);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.3rem;
+}
+
+.verified-box .tick {
+  position: relative;
+}
+
+.tick-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tick {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.verified-box span {
+  font-family: "bold";
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #363636;
+}
+
+.result--item:nth-child(1) .result--thumbnail {
+  background-image: url(https://cdn.discordapp.com/discovery-splashes/662267976984297473/4798759e115d2500fef16347d578729a.jpg?size=2048);
+}
+
+.result--item:nth-child(2) .result--thumbnail {
+  background-image: url(https://cdn.discordapp.com/discovery-splashes/1046979304547954728/d0ac123bc0db716e100a5a3a24c62fa8.jpg?size=2048);
+}
+
+.result--item:nth-child(3) .result--thumbnail {
+  background-image: url(https://cdn.discordapp.com/discovery-splashes/522681957373575168/a3828b6f998f80e8c712230c66a967d7.jpg?size=2048);
+}
+
+.result--item:nth-child(4) .result--thumbnail {
+  background-image: url(https://cdn.discordapp.com/discovery-splashes/679875946597056683/b27c03d9f875546dd0da4f9a787bce2c.jpg?size=2048);
+}
+
+.result--item:nth-child(5) .result--thumbnail {
+  background-image: url(https://cdn.discordapp.com/discovery-splashes/541484311354933258/0e0519045645ed1931c408ec42af9000.jpg?size=2048);
+}
