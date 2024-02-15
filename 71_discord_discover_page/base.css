@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+/* fonts */
+@font-face {
+  font-family: "extra-bold";
+  src: url(fonts/bold-black.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(fonts/Bold.ttf);
+}
+
+@font-face {
+  font-family: "medium";
+  src: url(fonts/medium.ttf);
+}
+
+@font-face {
+  font-family: "regular-bold";
+  src: url(fonts/regular-black.ttf);
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(fonts/regular.ttf);
+}
