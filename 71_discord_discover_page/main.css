@@ -51,7 +51,7 @@ main {
 }
 
 /* category section */
-.category-box{
+.category-box {
   width: 100%;
   height: 5rem;
   border: 0.7px solid #636363;
@@ -63,7 +63,7 @@ main {
   justify-content: space-between;
 }
 
-.category-box span{
+.category-box span {
   font-family: "regular";
   font-size: 1.2rem;
   color: #363636;
@@ -227,7 +227,7 @@ main {
 .verified-box {
   display: inline-flex;
   padding: 0.3rem 0.5rem;
-  background-color: rgb(213, 213, 213);
+  background-color: rgb(234, 234, 234);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -276,7 +276,6 @@ main {
   background-image: url(https://cdn.discordapp.com/discovery-splashes/541484311354933258/0e0519045645ed1931c408ec42af9000.jpg?size=2048);
 }
 
-
 @media (max-width: 1120px) {
   .main-content {
     width: 90%;
@@ -287,7 +286,7 @@ main {
     display: none;
   }
 
-  .category-box{
+  .category-box {
     display: flex;
   }
 
@@ -295,5 +294,20 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .result--thumbnail {
+    display: none;
+  }
+
+  .verified-box {
+    visibility: hidden;
+  }
+
+  .result--about {
+    width: 100%;
+    position: relative;
   }
 }
