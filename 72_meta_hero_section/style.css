@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+#header {
+  height: 8rem;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+nav .navbar-left ul,
+nav .navbar-right ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav .navbar-left ul li,
+nav .navbar-right ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav .navbar-left ul li a,
+nav .navbar-right ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.icon-dropdown {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
+
+.icon-account {
+  font-size: 2.8rem;
+}
+
+.search-box {
+  width: 20rem;
+  height: 4.8rem;
+  position: relative;
+}
+
+#search {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  border: 1px solid #d7d7d7;
+  padding: 1rem;
+}
+
+.label {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 50%;
+  left: 20%;
+  color: #919191;
+  transform: translateY(-50%);
+}
+
+.icon-search {
+  top: 50%;
+  left: 5%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+#search:focus {
+  outline: 1px solid rgb(30, 101, 193);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.logo-name {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.hero-section {
+  height: calc(100vh - 8rem);
+  width: 100%;
+  background-color: bisque;
+  overflow: hidden;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blanket {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+}
+
+.hero-data-box {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 50rem;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.badge {
+  color: rgb(30, 101, 193);
+  background-color: rgb(198, 219, 246);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.hero-data-box .primary--heading {
+  font-weight: 500;
+  font-size: 6.3rem;
+  color: #fff;
+  line-height: 7rem;
+  margin: 2rem 0rem 2.5rem 0rem;
+}
+
+.hero-data-box .primary--description {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: justify;
+  margin-bottom: 4rem;
+}
+
+.btn-box {
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 3rem;
+}
+
+.btn--addtobag {
+  background-color: rgb(30, 101, 193);
+}
+
+.btn--learnmore {
+  border: 2px solid#fff;
+}
