@@ -17,11 +17,12 @@ main {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 #search {
   font-family: "medium";
-  color: rgb(148, 148, 148);
+  color: #2a2a2a;
   font-size: 1.6rem;
   width: 93.5%;
   height: 55px;
@@ -36,6 +37,10 @@ main {
 
 #search:focus {
   outline: 2px solid #6249e9;
+}
+
+#search::placeholder {
+  color: rgb(148, 148, 148);
 }
 
 .search--icon {
@@ -130,11 +135,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  transition: all 0.3s;
 }
 
 .result--item {
   display: flex;
   gap: 2rem;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+}
+
+.result--item:hover {
+  background-color: rgba(148, 148, 148, 0.15);
+  cursor: pointer;
 }
 
 .result--thumbnail {
@@ -242,4 +255,11 @@ main {
 
 .result--item:nth-child(5) .result--thumbnail {
   background-image: url(https://cdn.discordapp.com/discovery-splashes/541484311354933258/0e0519045645ed1931c408ec42af9000.jpg?size=2048);
+}
+
+@media (max-width: 720px) {
+  .main-content {
+    width: 90%;
+    margin-top: 4rem;
+  }
 }
