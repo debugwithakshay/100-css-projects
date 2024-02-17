@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 219, 252);
+  padding: 1rem;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
+}
+
+.card {
+  width: 35rem;
+  height: 35rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.profile-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 5.5rem;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding-bottom: 2rem;
+}
+
+.user-image {
+  width: 5rem;
+  height: 5rem;
+  background-image: url(https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-data .user-name {
+  font-size: 1.8rem;
+}
+
+.user-data .user-email {
+  font-size: 1.5rem;
+  color: rgb(153, 153, 153);
+  margin-top: -0.4rem;
+}
+
+.setting-items-box {
+  width: 100%;
+  height: calc(100% - 5.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.setting-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: rgb(217, 217, 217);
+  right: 0;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.toggle::after {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+
+.setting-item span:first-child {
+  font-size: 3rem;
+  color: rgb(92, 92, 92);
+}
+
+.setting-item:nth-child(2) {
+  position: relative;
+}
+
+.setting-item span:last-child {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: rgb(82, 82, 82);
+}
+
+.setting-item:last-child {
+  border-top: 1px solid rgb(235, 235, 235);
+}
