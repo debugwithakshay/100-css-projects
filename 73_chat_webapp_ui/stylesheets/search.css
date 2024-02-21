@@ -1,0 +1,177 @@
+.search-section {
+  width: 29%;
+  height: 100%;
+}
+
+/* search box */
+
+.searchbar-box {
+  width: 100%;
+  height: 4.5rem;
+  position: relative;
+}
+
+.searchbar-box .icon--search {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #848890;
+}
+
+.searchbar-box .search-name {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+  position: absolute;
+  left: 4.5rem;
+  font-weight: 500;
+  color: #a0a5ae;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-section #searchbar {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(71, 76, 85);
+}
+
+.search-section #searchbar:focus {
+  outline: 1.5px solid #fff;
+}
+
+/* resent chats */
+.recent-chats-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  height: calc(100% - 6.5rem);
+  gap: 1rem;
+}
+
+.chat-box {
+  width: 100%;
+  height: 6.5rem;
+  border-radius: 1.2rem;
+  display: flex;
+  padding: 1rem 1rem;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.chat-box:hover {
+  background-color: rgba(131, 152, 186, 0.1);
+}
+
+.chat-selected {
+  background-color: rgba(131, 152, 186, 0.1);
+}
+
+.chat-about {
+  width: 60%;
+}
+
+.chat-about .chat-name {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.chat-descripton {
+  font-size: 1.1rem;
+  color: #a6a4a4;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.chat-box .chat-profile {
+  width: 15%;
+  height: 4rem;
+  align-self: center;
+  border-radius: 1rem;
+  background-size: cover;
+}
+
+.chat-box:nth-child(1) .chat-profile {
+  background-image: url(../assets/chat-avatar_1.png);
+}
+
+.chat-box:nth-child(2) .chat-profile {
+  background-image: url(../assets/chat-avatar_2.png);
+}
+
+.chat-box:nth-child(3) .chat-profile {
+  background-image: url(../assets/chat-avatar_3.png);
+}
+
+.chat-box:nth-child(4) .chat-profile {
+  background-image: url(../assets/chat-avatar_4.png);
+}
+
+.chat-box:nth-child(5) .chat-profile {
+  background-image: url(../assets/chat-avatar_5.png);
+}
+
+.chat-box:nth-child(6) .chat-profile {
+  background-image: url(../assets/chat-avatar_6.png);
+}
+
+.chat-box:nth-child(7) .chat-profile {
+  background-image: url(../assets/chat-avatar_7.png);
+}
+
+.chat-extra {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 17%;
+  right: 1rem;
+  margin-top: 2rem;
+}
+
+.chat-box .chat-time {
+  font-size: 1.2rem;
+  color: #a0a5ae;
+  font-weight: 500;
+  align-self: flex-end;
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+}
+
+.chat-extra div {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.chat-extra div .chat-notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(127, 127, 235);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.chat-extra .icon--pin {
+  font-size: 2rem;
+  transform: rotate(30deg);
+  color: #a0a5ae;
+}
+
+.chat-extra .icon--seen {
+  color: #a0a5ae;
+  font-size: 2rem;
+}

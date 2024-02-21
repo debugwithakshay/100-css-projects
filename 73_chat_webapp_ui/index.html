@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="stylesheets/base.css" />
     <link rel="stylesheet" href="stylesheets/navbar.css" />
     <link rel="stylesheet" href="stylesheets/chat.css" />
+    <link rel="stylesheet" href="stylesheets/search.css" />
     <title>Chat Webapp UI</title>
   </head>
   <body>
@@ -33,7 +34,7 @@
 
           <div class="navigation-item">
             <span class="material-symbols-rounded navigation-icon--folder">
-              folder
+              meeting_room
             </span>
             <span class="navigation-icon-name">Meet</span>
           </div>
@@ -69,7 +70,133 @@
           <span class="navigation-icon-name">Settings</span>
         </div>
       </nav>
-      <section class="chat-section"></section>
+      <section class="chat-section">
+        <article class="search-section">
+          <div class="searchbar-box">
+            <input type="text" id="searchbar" />
+            <ion-icon name="search" class="icon--search"></ion-icon>
+            <span class="search-name">Search</span>
+          </div>
+
+          <!-- chat1 -->
+          <div class="recent-chats-section">
+            <div class="chat-box chat-selected">
+              <div class="chat-profile"></div>
+              <div class="chat-about">
+                <span class="chat-name">Rishika Gupta</span>
+                <p class="chat-descripton">Why you didn't tell me thi...</p>
+              </div>
+              <div class="chat-extra">
+                <div>
+                  <div class="chat-notification"><span>5</span></div>
+                  <span class="material-symbols-rounded icon--pin">
+                    push_pin
+                  </span>
+                </div>
+              </div>
+              <span class="chat-time">4m</span>
+            </div>
+
+            <!-- chat2 -->
+            <div class="chat-box">
+              <div class="chat-profile"></div>
+              <div class="chat-about">
+                <span class="chat-name">Anjali Pal</span>
+                <p class="chat-descripton">Anjalaaa panjalaa khan...</p>
+              </div>
+              <div class="chat-extra">
+                <span class="chat-time">15m</span>
+                <div>
+                  <span class="material-symbols-rounded icon--seen">
+                    done_all
+                  </span>
+                  <span class="material-symbols-rounded icon--pin">
+                    push_pin
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- chat3 -->
+            <div class="chat-box">
+              <div class="chat-profile"></div>
+              <div class="chat-about">
+                <span class="chat-name">Shubham</span>
+                <p class="chat-descripton">Don't worry, you will get...</p>
+              </div>
+              <div class="chat-extra">
+                <span class="chat-time">9:31 am</span>
+                <div>
+                  <div class="chat-notification"><span>2</span></div>
+                  <span class="material-symbols-rounded icon--pin">
+                    push_pin
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- chat4 -->
+            <div class="chat-box">
+              <div class="chat-profile"></div>
+              <div class="chat-about">
+                <span class="chat-name">Nikita Bhasin</span>
+                <p class="chat-descripton">No, actually i was lit busy...</p>
+              </div>
+              <div class="chat-extra">
+                <span class="chat-time">Yesterday</span>
+                <div></div>
+              </div>
+            </div>
+
+            <!-- chat5 -->
+            <div class="chat-box">
+              <div class="chat-profile"></div>
+              <div class="chat-about">
+                <span class="chat-name">Harshit Sharma</span>
+                <p class="chat-descripton">Y U don't share anything...</p>
+              </div>
+              <div class="chat-extra">
+                <span class="chat-time">Yesterday</span>
+              </div>
+            </div>
+
+            <!-- chat6 -->
+            <div class="chat-box">
+              <div class="chat-profile"></div>
+              <div class="chat-about">
+                <span class="chat-name">Srajal Rathore</span>
+                <p class="chat-descripton">Chill dude, why are you s...</p>
+              </div>
+              <div class="chat-extra">
+                <span class="chat-time">Tuesday</span>
+                <div></div>
+              </div>
+            </div>
+
+            <!-- chat7 -->
+            <div class="chat-box">
+              <div class="chat-profile"></div>
+              <div class="chat-about">
+                <span class="chat-name">Palak Yadav</span>
+                <p class="chat-descripton">I was getting late for the...</p>
+              </div>
+              <div class="chat-extra">
+                <span class="chat-time">Tuesday</span>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
