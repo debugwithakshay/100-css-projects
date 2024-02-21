@@ -1,0 +1,73 @@
+
+/* navbar */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5.5%;
+  height: 100%;
+  padding-top: 1rem;
+  position: relative;
+}
+
+nav .profile-picture {
+  width: 4.7rem;
+  height: 4.7rem;
+  background-image: url(../assets/profile-avatar.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+nav .navigation-items-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 2.7rem;
+}
+
+.navigation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation-item .material-symbols-rounded {
+  font-size: 2rem;
+}
+
+.navigation-item .navigation-icon--chat {
+  color: #fff;
+}
+
+.selected-navigation-item .navigation-icon-name {
+  color: #d1d1d1;
+}
+
+.navigation-item .navigation-icon--folder,
+.navigation-icon--calender,
+.navigation-icon--analytics,
+.navigation-icon--bookmark {
+  color: rgb(170, 175, 186);
+}
+
+.navigation-item .navigation-icon-name {
+  font-family: "Poppins";
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+}
+
+.navigation-seprator {
+  width: 60%;
+  height: 0.7px;
+  background-color: #504f4f;
+}
+
+.navigation-item--setting {
+  position: absolute;
+  bottom: 2rem;
+}
