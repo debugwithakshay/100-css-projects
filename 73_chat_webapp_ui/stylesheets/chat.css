@@ -1,1 +1,188 @@
+.active-chat-section {
+  width: 67%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+}
 
+.active-chat-section .active-chat-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-chat-header .active-chat-header--right {
+  display: flex;
+  gap: 3rem;
+}
+
+.active-chat-header .active-chat-header--left .profile {
+  display: flex;
+  align-items: center;
+}
+
+.active-chat-header .active-chat-header--left .active-chat-about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.active-chat-about .active-chat-name {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.active-chat-about .active-chat-status {
+  font-size: 1rem;
+  color: #8c919a;
+  font-weight: 400;
+}
+
+.active-chat-header .active-chat-header--left .active-chat-profile {
+  background-image: url(../assets/chat-avatar_1.png);
+  width: 4rem;
+  height: 4rem;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.active-chat-header .active-chat-header--right ion-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #8c919a;
+}
+
+/* chat box */
+
+.active-chat-box {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat--image {
+  position: relative;
+  width: 27rem;
+  height: 18rem;
+  border-radius: 1.4rem;
+  background-image: url(../assets/pizza_party_image.avif);
+  background-size: cover;
+  background-position: center;
+  left: 0rem;
+  overflow: hidden;
+  align-self: flex-start;
+}
+
+.chat--image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 17%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.reaction-box {
+  display: flex;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  z-index: 5;
+}
+
+.reaction-slip {
+  width: 5rem;
+  background-color: rgba(0, 0, 0, 0.727);
+  border-radius: 2rem;
+  padding-left: 5px;
+}
+
+.reaction-emoji {
+  font-size: 1.3rem;
+}
+
+.reactant-image {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.image--sender {
+  background-image: url(../assets/chat-avatar_1.png);
+  left: 2.5rem;
+  bottom: -1px;
+}
+
+.image--owner {
+  background-image: url(../assets/profile-avatar.png);
+  left: 4rem;
+  bottom: -1px;
+}
+
+.sent-time {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  color: #d9d7d7;
+  font-weight: 600;
+  z-index: 5;
+}
+
+.chat--text {
+  background-color: rgba(131, 152, 186, 0.1);
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  display: flex inline;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  position: relative;
+  height: 10rem;
+  align-self: flex-start;
+}
+
+.icon--mic {
+  color: rgb(127, 127, 235);
+}
+
+.voice-msg-box .wave {
+  width: 22rem;
+}
+
+.chat--text--sender {
+  background-color: rgba(131, 152, 186, 0.1);
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  display: flex inline;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  position: relative;
+  height: 7rem;
+  align-self: flex-end;
+  width: 35rem;
+  background-color: rgb(127, 127, 235);
+}
+
+.sender-chat {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.chat--text--sender .icon--seen {
+  position: absolute;
+  font-size: 2rem;
+  bottom: 0.2rem;
+  right: 6.5rem;
+  color: #fff;
+}

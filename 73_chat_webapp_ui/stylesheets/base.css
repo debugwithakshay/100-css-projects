@@ -38,4 +38,6 @@ main {
   left: 7.5rem;
   border-radius: 1.8rem;
   padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
