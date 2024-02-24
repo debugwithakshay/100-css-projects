@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins";
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(214, 214, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  /* width: 60rem; */
+  /* height: 20rem; */
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0.3rem 0.3rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.primary-heading {
+  color: rgb(41, 41, 41);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-main {
+  width: 100%;
+  margin-top: 2rem;
+  /* height: 10rem; */
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#checkbox {
+  accent-color: #7d6bd8;
+  width: 2rem;
+  height: 2rem;
+}
+
+.newsletter-item {
+  display: flex inline;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  padding-right: 5rem;
+  border-radius: 0.5rem;
+}
+
+.newsletter-item:hover {
+  background-color: #dad3ff;
+}
+
+.newsletter-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-item div label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.newsletter-item div span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(117, 117, 117);
+}
+
+.email-box {
+  width: 60%;
+  height: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#input {
+  width: 70%;
+  height: 100%;
+  padding: 1rem;
+  border: 2px solid #dad3ff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #96949d;
+}
+
+#input:focus{
+    outline: 1px solid #7d6bd8;
+}
+button {
+  width: 30%;
+  height: 100%;
+  background-color: #7d6bd8;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .email-box{
+        width: 90%;
+    }
+}
