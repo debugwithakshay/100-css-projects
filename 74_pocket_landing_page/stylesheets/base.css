@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* fonts variable */
+/* Graphik */
+@font-face {
+  font-family: "Graphik-Extralight";
+  src: url(../fonts/Graphik/GraphikExtralight.woff);
+}
+
+@font-face {
+  font-family: "Graphik-light";
+  src: url(../fonts/Graphik/GraphikLight.woff);
+}
+
+@font-face {
+  font-family: "Graphik-regular";
+  src: url(../fonts/Graphik/GraphikRegular.woff);
+}
+
+@font-face {
+  font-family: "Graphik-medium";
+  src: url(../fonts/Graphik/GraphikMedium.woff);
+}
+
+@font-face {
+  font-family: "Graphik-Semibold";
+  src: url(../fonts/Graphik/GraphikSemibold.woff);
+}
+
+@font-face {
+  font-family: "Graphik-bold";
+  src: url(../fonts/Graphik/GraphikBold.woff);
+}
+
+@font-face {
+  font-family: "Graphik-black";
+  src: url(../fonts/Graphik/GraphikBlack.woff);
+}
+/* Doyle */
+@font-face {
+  font-family: "Doyle-regular";
+  src: url(../fonts/Doyle/Doyle-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Doyle-medium";
+  src: url(../fonts/Doyle/Doyle-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Doyle-bold";
+  src: url(../fonts/Doyle/Doyle-Bold.ttf);
+}
