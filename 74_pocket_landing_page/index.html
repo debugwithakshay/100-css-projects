@@ -3,14 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/base.css" />
+    <link rel="stylesheet" href="stylesheets/header.css" />
 
     <title>Discover stories on Pocket</title>
   </head>
   <body>
-    
+    <div class="container">
+      <!-- header -->
+      <header class="header">
+        <!-- navbar -->
+        <nav class="navbar">
+          <div class="navbar-main">
+            <img src="assets/logo.svg" alt="Pocket logo" class="header-logo" />
+            <ul class="navigation-menu">
+              <li><a href="#" class="navigation-link">Home</a></li>
+              <li><a href="#" class="navigation-link">Saves</a></li>
+              <li><a href="#" class="navigation-link active">Discover</a></li>
+              <li><a href="#" class="navigation-link">Collections</a></li>
+            </ul>
+            <div class="signuplogin-box">
+              <a class="header-btn login-btn">Log in</a>
+              <button class="header-btn signup-btn">Sign up</button>
+            </div>
+            <!-- for smaller devices -->
+            <div class="mobile-icons-box">
+              <img src="assets/account.svg" alt="account" class="icon--account" />
+              <img src="assets/menu.svg" alt="menu" class="icon--menu" />
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Discover section -->
+    </div>
   </body>
 </html>
