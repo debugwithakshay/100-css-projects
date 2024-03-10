@@ -4,10 +4,11 @@
 
 .header {
   display: flex;
-  height: 30rem;
-  border: 2px solid #000;
   margin: auto;
+  flex-direction: column;
 }
+
+/* navbar */
 
 .navbar {
   width: 100%;
@@ -92,25 +93,122 @@
   color: #fff;
 }
 
+/* mobile navbar */
 .icon--menu {
-  width: 3.7rem;
+  width: 2.5rem;
   display: none;
 }
 
 .icon--account {
-  width: 3.7rem;
+  width: 2.5rem;
   display: none;
   margin-right: 1rem;
 }
 
-.mobile-icons-box{
+.mobile-icons-box {
   position: absolute;
   right: 0;
 }
 
+/* interest section */
+.interest-section {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.interest-section div {
+  max-width: 114rem;
+  margin: auto;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  display: flex;
+}
+
+.interest-section-left,
+.interest-section-right {
+  width: 50%;
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  border: none !important;
+}
+
+.interest-heading {
+  font-size: 3rem;
+  font-family: "Doyle-medium";
+  line-height: 4rem;
+}
+
+.interest-paragraph {
+  font-size: 1.6rem;
+  font-family: "Graphik-regular";
+  line-height: 2.2rem;
+}
+
+.icon-savetopocket--black {
+  border-radius: 3px;
+  width: 1.8rem;
+}
+
+.interest-section-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interest-laptop-image {
+  width: 40rem;
+}
+
+.interest-signup-btn {
+  width: 17rem;
+  background-color: rgb(240, 64, 85);
+  text-align: center;
+  padding: 1rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Graphik-regular";
+  font-size: 1.8rem;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+}
+
+.interest-signup-btn:hover{
+  background-color: rgb(193, 50, 67);
+}
+
+/* media queries */
 @media (max-width: 1000px) {
   .navigation-menu {
     display: none;
+  }
+
+  .interest-section-left {
+    width: 100%;
+  }
+
+  .interest-section-right {
+    display: none;
+    width: 0px;
+  }
+
+  .interest-laptop-image{
+    display: none;
+  }
+
+  .interest-heading {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+
+  .interest-paragraph {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .interest-signup-btn {
+    align-self: center;
   }
 }
 
@@ -120,7 +218,38 @@
     display: inline-block;
   }
 
-  .signuplogin-box{
+  .signuplogin-box {
     display: none;
+  }
+
+  .interest-heading {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+
+  .interest-paragraph {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .interest-signup-btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .interest-heading {
+    text-align: left;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .interest-paragraph {
+    display: none;
+  }
+
+  .interest-signup-btn {
+    align-self: center;
+    width: 100%;
   }
 }
