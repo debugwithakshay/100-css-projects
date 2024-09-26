@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment QRCode</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <img
+              src="./assets/qr_scan_icon.svg"
+              alt="qr-scan icon"
+              id="icon-scan"
+            />
+            <h1 class="card-heading">Code Scan</h1>
+          </div>
+          <img
+            src="./assets/close_icon.svg"
+            alt="close the card"
+            id="close-icon"
+          />
+        </div>
+        <p class="card-description">
+          Display one of the codes below to the cashier to complete your
+          payement. <span class="tap-to-learn-text">Tap to learn how</span>
+        </p>
+        <div class="tab-box">
+          <span class="tab selected-tab">QR Code</span>
+          <span class="tab">Barcode</span>
+        </div>
+        <div class="code-box">
+          <div>
+            <img src="./assets/qr_code.svg" alt="qr-code" class="qr-code" />
+            <img src="./assets/stripe.webp" alt="stripe" id="stripe-icon">
+          </div>
+          <button class="renew-btn">Renew code</button>
+        </div>
+        <div class="card-footer">
+            <img src="./assets/shield.svg" alt="shield">
+            <p>All your transaction is fats and secure. By proceeding you agree to the Terms & Conditions</p>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
