@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins";
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  padding: 2rem;
+}
+
+.card {
+  width: 27rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.disc {
+  width: 12rem;
+  height: 12rem;
+  background-image: url("./assets/disc_background.webp");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  animation: spinning-disk 2s infinite linear;
+}
+
+.disc::after {
+  content: "";
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song-content {
+  margin-top: 2rem;
+}
+
+.song-content .song-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.song-content .artist-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #6e6e6e;
+  text-align: center;
+}
+
+.control-section {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.progress-total-bar {
+  width: 100%;
+  height: 7px;
+  background-color: #b9b9b9;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-total-bar::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: #2b2b2b;
+}
+
+.control-section .control-box Img {
+  width: 4rem;
+}
+
+@keyframes spinning-disk {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
