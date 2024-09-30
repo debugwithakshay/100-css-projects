@@ -17,13 +17,13 @@ This repository is a collection of 100 CSS Projects. ✨ I handpicked and coded 
 **Step 7** - Now, you can choose any project to practice. I recommend starting from 0 and working your way to 100 in order! 🔢<br />
 
 ## Types of Projects✂️?
-✅ **1 to 10** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **11 to 20** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **21 to 30** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **31 to 40** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **41 to 50** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **51 to 60** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **61 to 70** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **71 to 80** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **81 to 90** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
-🟩 **91 to 100** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+✅ **1 to 10** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **11 to 20** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **21 to 30** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **31 to 40** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **41 to 50** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **51 to 60** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **61 to 70** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **71 to 80** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **81 to 90** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **91 to 100** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
