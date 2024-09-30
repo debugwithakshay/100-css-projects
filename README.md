@@ -1,6 +1,6 @@
 # 100-css-projects🛸
 
-
+<!-- Image Credit to Halo Labs from Dribbble -->
 ![Banner Image](https://cdn.dribbble.com/userupload/16744137/file/original-ddf6650ad6b5c360f3eb7678178b614c.png?resize=1024x768)
 
 
@@ -15,3 +15,15 @@ This repository is a collection of 100 CSS Projects. ✨ I handpicked and coded 
 **Step 5** - Once Live Server is installed, a "Go Live" button will appear at the bottom right of VSCode. Click on it. 🎯<br />
 **Step 6** - A browser window will open with all the projects listed. Click on any project to preview its result. 🌐<br />
 **Step 7** - Now, you can choose any project to practice. I recommend starting from 0 and working your way to 100 in order! 🔢<br />
+
+## Types of Projects✂️?
+✅ **1 to 10** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **11 to 20** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **21 to 30** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **31 to 40** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **41 to 50** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **51 to 60** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **61 to 70** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **71 to 80** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **81 to 90** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
+🟩 **91 to 100** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc)
