@@ -18,12 +18,7 @@ This repository is a collection of 100 CSS Projects. ✨ I handpicked and coded 
 
 ## Types of Projects✂️?
 ✅ **1 to 10** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **11 to 20** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **21 to 30** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **31 to 40** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **41 to 50** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **51 to 60** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **61 to 70** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **71 to 80** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **81 to 90** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
-🟩 **91 to 100** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+🟩 **11 to 20** - In Progress<br />
+
+## Want to Contribute?
+🌟 Feel free to contribute to this repository by helping resolving issues and refactoring code. 🚀 Your contributions are always welcome and greatly appreciated. 🙌 Let's work together to make this project even better and more efficient for everyone! 💻✨
