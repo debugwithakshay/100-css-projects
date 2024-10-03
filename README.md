@@ -17,8 +17,12 @@ This repository is a collection of 100 CSS Projects. ✨ I handpicked and coded 
 **Step 7** - Now, you can choose any project to practice. I recommend starting from 0 and working your way to 100 in order! 🔢<br />
 
 ## Types of Projects✂️?
-✅ **1 to 10** - UI Components & Cards(eg:- Payment Card, Device Usage Card, etc).<br />
+✅ **1 to 10** - UI Components & Cards (eg:- Payment Card, Device Usage Card, etc).<br />
 🟩 **11 to 20** - In Progress<br />
+🟩 **21 to 30** - In Progress<br />
+🟩 **31 to 40** - In Progress<br />
+🟩 **41 to 50** - In Progress<br />
+🟩 **51 to 60** - Animation and Transition (eg:- Bouncing Ball, Heart Beat, etc).<br />
 
 ## Want to Contribute?
 🌟 Feel free to contribute to this repository by helping resolving issues and refactoring code. 🚀 Your contributions are always welcome and greatly appreciated. 🙌 Let's work together to make this project even better and more efficient for everyone! 💻✨
